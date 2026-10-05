@@ -3,10 +3,10 @@ import numpy as np
 
 # (minimum people in a zone, name, BGR colour)
 LEVELS = [
-    (0,  "Low",      (0, 200, 0)),
-    (5,  "Medium",   (0, 215, 255)),
-    (9,  "High",     (0, 128, 255)),
-    (13, "Critical", (0, 0, 255)),
+    (0, "Low",      (0, 200, 0)),
+    (4, "Medium",   (0, 215, 255)),
+    (6, "High",     (0, 128, 255)),
+    (7, "Critical", (0, 0, 255)),
 ]
 
 

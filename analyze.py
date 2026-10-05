@@ -8,10 +8,10 @@ ROWS, COLS = 3, 4
 
 # (minimum people in a cell, name, BGR colour)
 LEVELS = [
-    (0,  "Low",      (0, 200, 0)),
-    (5,  "Medium",   (0, 215, 255)),
-    (9,  "High",     (0, 128, 255)),
-    (13, "Critical", (0, 0, 255)),
+    (0, "Low",      (0, 200, 0)),
+    (2, "Medium",   (0, 215, 255)),
+    (4, "High",     (0, 128, 255)),
+    (6, "Critical", (0, 0, 255)),
 ]
 
 

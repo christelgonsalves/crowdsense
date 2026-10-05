@@ -2,4 +2,5 @@ venv/
 __pycache__/
 *.pt
 datasets/
-runs/
+runs/*.mp4
+*.mp4
