@@ -1,0 +1,8 @@
+pyproject.toml
+crowdsense/__init__.py
+crowdsense/analysis.py
+crowdsense/detector.py
+crowdsense.egg-info/PKG-INFO
+crowdsense.egg-info/SOURCES.txt
+crowdsense.egg-info/dependency_links.txt
+crowdsense.egg-info/top_level.txt
