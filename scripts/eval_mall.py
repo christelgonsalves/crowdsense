@@ -14,13 +14,14 @@ p.add_argument("--imgsz", type=int, default=1280)
 p.add_argument("--conf", type=float, default=0.35)
 p.add_argument("--step", type=int, default=10, help="use every Nth frame (10 = 200 frames)")
 p.add_argument("--tag", default="run")
+p.add_argument("--tile", type=int, default=640)
 a = p.parse_args()
 
 gt = loadmat(str(Path(a.root, "mall_gt.mat")))["count"].flatten()
 frames = sorted(Path(a.root, "frames").glob("*.jpg"))
 print("Frames found:", len(frames), "| GT counts:", len(gt))
 
-det = PersonDetector(weights=a.weights, imgsz=a.imgsz, conf=a.conf, mode=a.mode)
+det = PersonDetector(weights=a.weights, imgsz=a.imgsz, conf=a.conf, mode=a.mode, tile=a.tile)
 
 rows, errs = [], []
 for i in range(0, min(len(frames), len(gt)), a.step):
