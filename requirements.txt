@@ -1,6 +1,7 @@
 ultralytics
-opencv-python-headless
+opencv-python
 numpy
 scipy
 streamlit
 sahi
+pandas
