@@ -48,10 +48,9 @@ if up is not None:
     c2.metric("Busiest zone", int(counts.max()))
     c3.metric("Highest level", top[1])
     if top[1] in ("High", "Critical"):
-        r, c = divmod(int(counts.argmax()), counts.shape[1])
-        st.error(f"ALERT: zone ({r + 1},{c + 1}) is {top[1].upper()} with {int(counts.max())} people")
+        st.error("OVERCROWDED")
     else:
-        st.success("No overcrowding alert")
+        st.success("NOT OVERCROWDED")
 
     t1, t2, t3 = st.tabs(["Detections", "Density heatmap", "Zone levels"])
     with t1:
